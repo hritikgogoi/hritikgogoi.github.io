@@ -1,75 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hritik Gogoi - Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        .navbar {
-            width: 100%;
-            background: #333;
-            padding: 15px;
-            text-align: center;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-        .container {
-            display: flex;
-            margin-top: 30px;
-            max-width: 800px;
-            text-align: left;
-        }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-right: 20px;
-        }
-        .content {
-            flex: 1;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hritik Gogoi - Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .navbar {
+            width: 100%;
+            background: #333;
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            margin-top: 30px;
+            max-width: 800px;
+            text-align: left;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .content {
+            flex: 1;
+        }
+        ul.downloads {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul.downloads li {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="#cv">CV</a>
-        <a href="#research">Research</a>
-        <a href="#personal">Personal Life</a>
-    </div>
-    <div class="container">
-        <img src="profile.jpg" alt="Hritik Gogoi" class="profile-pic">
-        <div class="content">
-            <h1>Hi, Welcome to My Personal Website</h1>
-            <p>I'm Hritik, a PhD student at CU. I work with Geant4, ROOT, BNCT, and phantom simulations.</p>
-        </div>
-    </div>
-    
-    <div id="cv">
-        <h2>My CV</h2>
-        <p><a href="cv.pdf" target="_blank">Download CV</a></p>
-    </div>
-    
-    <div id="research">
-        <h2>My Research</h2>
-        <p>Details about my research on BNCT, Geant4, and other projects.</p>
-    </div>
-    
-    <div id="personal">
-        <h2>Personal Life</h2>
-        <p>More about my interests and hobbies.</p>
-    </div>
+    <div class="navbar">
+        <a href="#cv">CV</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a> <!-- New navbar link -->
+        <a href="#personal">Personal Life</a>
+    </div>
+
+    <div class="container">
+        <img src="profile.jpg" alt="Hritik Gogoi" class="profile-pic">
+        <div class="content">
+            <h1>Hi, Welcome to My Personal Website</h1>
+            <p>I'm Hritik, a PhD student at CU. I work with Geant4, ROOT, BNCT, and phantom simulations.</p>
+        </div>
+    </div>
+
+    <div id="cv">
+        <h2>My CV</h2>
+        <p><a href="cv.pdf" target="_blank">Download CV</a></p>
+    </div>
+
+    <div id="research">
+        <h2>My Research</h2>
+        <p>Details about my research on BNCT, Geant4, and other projects.</p>
+    </div>
+
+    <!-- ✅ New Teaching Section -->
+    <div id="teaching">
+        <h2>Teaching</h2>
+        <p>Below are some of my teaching materials you can download:</p>
+        <ul class="downloads">
+            <li><strong>Lecture 1: Introduction to Programming</strong> — <a href="teaching/intro_to_programming.pdf" download>Download PDF</a></li>
+            <li><strong>Lecture 2: Web Development Basics</strong> — <a href="teaching/web_dev_basics.pdf" download>Download PDF</a></li>
+            <li><strong>Lecture 3: Data Structures</strong> — <a href="teaching/data_structures.pdf" download>Download PDF</a></li>
+        </ul>
+    </div>
+
+    <div id="personal">
+        <h2>Personal Life</h2>
+        <p>More about my interests and hobbies.</p>
+    </div>
 </body>
 </html>
